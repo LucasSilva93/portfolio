@@ -335,13 +335,14 @@ form textarea {
 
 .introducao2 .midias-social{
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-around;
   text-align: left;
-  gap: 50px;
+  gap: 5px;
 } 
 .midias-social .redes{
   display: flex;
-  width: 8rem;
   transition: .5s;
 }
 .midias-social .redes a span{
@@ -381,7 +382,7 @@ form textarea {
 
 /* ********************  RESPONSIVOS ************************** */
 
-@media (max-width: 722px) {
+@media (max-width: 740px) {
   header .navgation .home {
     display: none;
   }
@@ -392,6 +393,12 @@ form textarea {
   .logo {
     font-size: 1.5rem;
   }
+  .inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -399,41 +406,36 @@ form textarea {
     display: none;
   }
   .popup-contato {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 90%;
     height: 440px;
-    background-color: transparent;
-    border: 2px solid #f8fae56e;
-    border-radius: 20px;
-    backdrop-filter: blur(20px); /* MUITO IMPORTANTE EFEITO BORRADO*/
-    box-shadow: 0 0 30px #f8fae5;
-    transform: scale(0);
-    transition: transform 0.5s ease, height 0.2s ease;
   }
-  .active {
-    transform: scale(1);
-  }
-  .popup-contato .icon-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45px;
-    height: 45px;
-    background: #f8fae567;
-    font-size: 2rem;
-    color: #b19470;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 20px;
-    cursor: pointer;
-  }
-  .popup-contato .icon-close:hover {
-    color: #76453b;
-  }
+  
   .form-contato h2 {
     font-size: 1.2rem;
+  }
+}
+
+@media(max-width: 533px){
+  .inicio{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .introducao1{
+    width: 100%;
+    text-align: center;
+  }
+  .introducao1 p {
+    letter-spacing: 5px;
+  }
+  .introducao2{
+    width: 100%;
+  }
+}
+
+@media(max-width: 370px){
+  .midias-social .redes a span{
+    display: none;
   }
 }

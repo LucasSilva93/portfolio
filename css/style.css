@@ -223,7 +223,7 @@ form textarea{
   border-top-right-radius: 10px;
   border-bottom-left-radius: 20px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 3;
 }
 .popup-contato .icon-close:hover {
   color: #76453b;
@@ -279,7 +279,7 @@ form textarea{
     align-items: center;
     border-bottom-left-radius: 20px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 3;
   }
   .popup-contato .icon-close:hover {
     color: #76453b;

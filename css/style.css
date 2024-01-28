@@ -17,11 +17,11 @@ body{
 
 header{
     position: fixed;
-    z-index: 99;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 50px;
     background: #f8fae5;
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@ header{
     transform: scaleX(1);
 }
 
-.navgation .btnContato-popup{
+.btnContato-popup{
     width: 130px;
     height: 50px;
     background: transparent;
@@ -81,7 +81,7 @@ header{
     transition: .5s;
 }
 
-.navgation .btnContato-popup:hover{
+.btnContato-popup:hover{
     background: #76453b;
     border-color: #76453b;
     color: #f8fae5;
@@ -90,14 +90,15 @@ header{
 /* ********* Contato popup ************ */
 
 .popup-contato{
+    z-index: 2;
     margin: 150px;
     width: 400px;
     height: 440px;
     background-color: transparent;
-    border: 2px solid #f8fae536;
-    border-radius: 20px;
-    backdrop-filter: blur(20px); /* MUITO IMPORTANTE EFEITO BORRADO*/
-    box-shadow: 0 0 30px #f8fae567;
+        border: 2px solid #f8fae56e;
+        border-radius: 20px;
+        backdrop-filter: blur(20px); /* MUITO IMPORTANTE EFEITO BORRADO*/
+        box-shadow: 0 0 30px #f8fae5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,9 +131,57 @@ header{
     color: #76453b;
 }
 
-.cores{
-    color: #43766c; /* background*/
-    color: #f8fae5; /* sub-background*/
-    color: #b19470; /* h2 ou detalhes*/
-    color: #76453b; /* h1 ou detalhes*/
+@media(max-width: 722px){
+    header .navgation .home{
+        display: none;
+    }
+    header{
+        display: flex;
+        padding: 20px 30px;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 600px){
+    header .navgation{
+        display: none;
+    }
+    .popup-contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 400px;
+        background-color: transparent;
+        border: 2px solid #f8fae56e;
+        border-radius: 20px;
+        backdrop-filter: blur(20px); /* MUITO IMPORTANTE EFEITO BORRADO*/
+        box-shadow: 0 0 30px #f8fae5;
+        transform: scale(0);
+        transition: transform .5s ease, height .2s ease;   
+    }
+    .active{
+        transform: scale(1);
+    }
+    .popup-contato .icon-close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45px;
+        height: 45px;
+        background: #f8fae567;
+        font-size: 2rem;
+        color: #b19470;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .popup-contato .icon-close:hover{
+        color: #76453b;
+    }
 }

@@ -12,7 +12,8 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <header>
+    <div class="header">
+        <header>
         <h2 class="logo">Portfó<span>lio.</span></h2>
         <nav class="navgation">
             <a class="home" href="#">Iníco</a>
@@ -20,7 +21,8 @@
             <a href="#">Projetos</a>
         </nav>
         <button class= "btnContato-popup">Contato</button>
-    </header>
+        </header>
+    </div>
     <div class="popup-contato">  <!--Contato popup-->
         <span class="icon-close"><ion-icon name="close"></ion-icon></span>
         <div class="form-contato"> <!--Form Contato-->
@@ -41,14 +43,45 @@
                     <input type="text" required>
                     <label>Assunto</label>
                 </div>
-                <textarea name="conteudo" id="" ></textarea>
-                <button type="submit" class="btnConatato">Enviar</button>
-                </div>
-            </form>
-        </div> <!--Form Contato-->
+                <textarea name="conteudo" id=""  placeholder="Ainda não esta funcionando o envio do formulário"></textarea>
+                <button type="submit" class="btnConatato">Enviar</button>  
+            </form> 
+        </div><!--Form Contato-->
     </div> <!--Contato popup-->
     <div id="container">
-        <h1>Olá, Mundo!</h1>
+        <div class="inicio">
+           <div class="introducao1">
+                <h2>Olá, Mundo!</h2>
+                <h1>Me chamo <span>Lucas</span></h1>
+                <p>Desenvovedor web <span>Front-end.</span></p>
+                <a href="#">CV-Download</a>
+           </div>
+           <div class="introducao2">
+                <div class="img">
+                    <img src="imgs/#">
+                    <div class="midias-social">
+                        <div class="redes">
+                            <a href="https://www.instagram.com/_lucassilva_93/">
+                                <ion-icon class="instagram" name="logo-instagram"></ion-icon>
+                                <span class="instagram">Instagram</span>
+                            </a>     
+                        </div>
+                        <div class="redes">
+                            <a href="https://github.com/LucasSilva93">
+                                <ion-icon class="github" name="logo-github"></ion-icon>
+                                <span class="github">GitHub</span>
+                            </a>
+                        </div>
+                        <div class="redes">
+                            <a href="https://www.linkedin.com/in/lucas-silva-9b48a122b/">
+                                <ion-icon class="linkedin" name="logo-linkedin"></ion-icon>
+                                <span class="linkedin">Linkedin</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
     </div>
 </body>
 </html>

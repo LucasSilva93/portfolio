@@ -17,14 +17,24 @@ body {
 
 /* ***************** CONFIGURAÇÕES HEADER ***************** */
 
-header {
+.header{
   position: fixed;
   z-index: 99;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 20px 50px;
   background: #f8fae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #76453b;
+  box-shadow: 0 0 30px #76453b;
+}
+
+header {
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -233,11 +243,141 @@ form textarea {
 
 #container{
   width: 100%;
-  max-width: 1100px;
-  padding: 10px;
-  border: 1px solid;
+  height: 1500px;
+  max-width: 1500px;
+  padding: 20px;
   margin-top: 90px;
 }
+
+
+/* ********** INICIO ************* */
+
+.inicio{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.introducao1,
+.introducao2{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.introducao2{
+  align-items: center;
+}
+
+/* ********** INICIO // introdução1 ************* */
+
+.introducao1 h1 {
+  font-size: 4rem;
+  color: #111d1a;
+}
+.introducao1 h1 span{
+  color: #f8fae5;
+}
+.introducao1 p span{
+  color: #111d1a;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+}
+
+.introducao1 h2{
+  font-size: 2rem;
+  margin-top: 10px;
+  color: #111d1a;
+}
+.introducao1 p {
+  color: #f8fae5;
+  letter-spacing: 10px;
+  margin-left: 2px;
+}
+
+.introducao1 a{
+  text-align: center;
+  padding: 10px 50px;
+  margin: 15px auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 2px solid #b19470;
+  color: #b19470;
+  text-decoration: none;
+  background: #f8fae5;
+  transition: .5s;
+}
+.introducao1 a:hover{
+  background: #76453b;
+  border-color: #76453b;
+  color: #f8fae5;
+}
+
+/* ********** INICIO // introdução2 -IMG ************* */
+
+.img{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.img img{
+  width: 100%;
+  height: 80%;
+}
+
+.introducao2 .midias-social{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  gap: 50px;
+} 
+.midias-social .redes{
+  display: flex;
+  width: 8rem;
+  transition: .5s;
+}
+.midias-social .redes a span{
+  cursor: pointer;
+  position: relative;
+  top: -12px;
+  color: #111d1a;
+}
+
+.midias-social .redes .instagram:hover{
+  color: #F6366E;
+  font-weight: bold;
+}
+.midias-social .redes .github:hover{
+  color: #000;
+  font-weight: bold;
+}
+.midias-social .redes .linkedin:hover{
+  color: #00e1ff;
+  font-weight: bold;
+}
+
+.midias-social .redes a{
+  text-decoration: none;
+  
+}
+
+.midias-social .redes a ion-icon{
+  font-size: 2.1rem; 
+  color: #111d1a;
+  
+}
+
+
+
+
 
 /* ********************  RESPONSIVOS ************************** */
 

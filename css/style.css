@@ -19,7 +19,7 @@ body {
 
 header {
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
@@ -92,7 +92,6 @@ header {
 /* ********* CONTATO POPUP ************ */
 
 .popup-contato {
-  z-index: 2;
   margin: 150px;
   width: 400px;
   height: 440px;
@@ -223,7 +222,6 @@ form textarea{
   border-top-right-radius: 10px;
   border-bottom-left-radius: 20px;
   cursor: pointer;
-  z-index: 3;
 }
 .popup-contato .icon-close:hover {
   color: #76453b;
@@ -279,7 +277,6 @@ form textarea{
     align-items: center;
     border-bottom-left-radius: 20px;
     cursor: pointer;
-    z-index: 3;
   }
   .popup-contato .icon-close:hover {
     color: #76453b;

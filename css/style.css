@@ -105,10 +105,9 @@ header {
   margin: 150px;
   width: 400px;
   height: 440px;
-  background-color: transparent;
+  background-color: #43766c;
   border: 2px solid #f8fae56e;
   border-radius: 20px;
-  backdrop-filter: blur(30px); /* MUITO IMPORTANTE EFEITO BORRADO*/
   box-shadow: 0 0 30px #f8fae5;
   display: flex;
   justify-content: center;

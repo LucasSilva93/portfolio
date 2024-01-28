@@ -68,7 +68,7 @@ header {
   transform: scaleX(1);
 }
 
-.btnContato-popup{
+.btnContato-popup {
   width: 130px;
   height: 50px;
   background: transparent;
@@ -116,93 +116,92 @@ header {
 
 /* *********** FORM POPUP *************** */
 .form-contato {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.form-contato h2{
-    width: 100%;
-    height: 45px;
-    padding: 20px;
-    background: #f8fae5;
-    color: #b19470;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.form-contato h2 {
+  width: 100%;
+  height: 45px;
+  padding: 20px;
+  background: #f8fae5;
+  color: #b19470;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.form-contato form{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.input-box{
-    position: relative;
-    width: 80%;
-    height: 50px;
-    border-bottom: 2px solid #f8fae5;
-    margin: 20px 0;
+.form-contato form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.input-box label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1rem;
-    color: #f8fae5;
-    font-weight: 500;
-    pointer-events: none;
-    transition: .5s;
+.input-box {
+  position: relative;
+  width: 80%;
+  height: 50px;
+  border-bottom: 2px solid #f8fae5;
+  margin: 20px 0;
 }
 
-.input-box input:focus~label,
-.input-box input:valid~label {
-    top: -5px;
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #f8fae5;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    color:#fff;
-    font-weight: 600;
-    padding: 0 35px 0 5px;
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
 }
 
-form textarea{
-    width: 90%;
-    height: 60%;
-    outline: none;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+form textarea {
+  width: 90%;
+  height: 60%;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 /* *********** btnPopup ******* */
 
-.btnConatato{
-    padding: 5px 50px;
-    margin: 10px;
-    border-radius: 5px;
-    border: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: .5s;
-    color: #b19470;
-    background: #f8fae5;
+.btnConatato {
+  padding: 5px 50px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #b19470;
+  background: #f8fae5;
 }
-.btnConatato:hover{
+.btnConatato:hover {
   background: #76453b;
   border-color: #76453b;
   color: #f8fae5;
@@ -228,6 +227,16 @@ form textarea{
 }
 .popup-contato .icon-close:hover {
   color: #76453b;
+}
+
+/* ****************** CONTEUDO ************************ */
+
+#container{
+  width: 100%;
+  max-width: 1100px;
+  padding: 10px;
+  border: 1px solid;
+  margin-top: 90px;
 }
 
 /* ********************  RESPONSIVOS ************************** */
@@ -284,7 +293,7 @@ form textarea{
   .popup-contato .icon-close:hover {
     color: #76453b;
   }
-  .form-contato h2{
+  .form-contato h2 {
     font-size: 1.2rem;
   }
 }

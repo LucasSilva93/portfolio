@@ -198,7 +198,7 @@ form textarea {
 
 /* *********** btnPopup ******* */
 
-.btnConatato {
+.btnContato {
   padding: 5px 50px;
   margin: 10px;
   border-radius: 5px;
@@ -210,7 +210,7 @@ form textarea {
   color: #b19470;
   background: #f8fae5;
 }
-.btnConatato:hover {
+.btnContato:hover {
   background: #76453b;
   border-color: #76453b;
   color: #f8fae5;

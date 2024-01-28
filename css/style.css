@@ -1,117 +1,271 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-body{
-    background: #43766c;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-header{
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 50px;
-    background: #f8fae5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo{
-    font-size: 2rem;
-    color: #b19470;
-    user-select: none;
-}
-.logo span{
-    color: #76453b;
+body {
+  background: #43766c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.navgation a{
-    position: relative;
-    font-size: 1.1rem;
-    color: #b19470;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
+/* ***************** CONFIGURAÇÕES HEADER ***************** */
+
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  background: #f8fae5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 2rem;
+  color: #b19470;
+  user-select: none;
+}
+.logo span {
+  color: #76453b;
 }
 
-.navgation a::after{
-    content:'';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: #76453b;
-    border-radius: 5px;
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: .5s;
-}
-.navgation a:hover{
-    color: #76453b;
+.navgation a {
+  position: relative;
+  font-size: 1.1rem;
+  color: #b19470;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
 }
 
-.navgation a:hover::after{
-    transform: scaleX(1);
+.navgation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #76453b;
+  border-radius: 5px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+.navgation a:hover {
+  color: #76453b;
+}
+
+.navgation a:hover::after {
+  transform: scaleX(1);
 }
 
 .btnContato-popup{
-    width: 130px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #b19470;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1rem;
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #b19470;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #b19470;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+
+.btnContato-popup:hover {
+  background: #76453b;
+  border-color: #76453b;
+  color: #f8fae5;
+}
+
+/* ********* CONTATO POPUP ************ */
+
+.popup-contato {
+  z-index: 2;
+  margin: 150px;
+  width: 400px;
+  height: 440px;
+  background-color: transparent;
+  border: 2px solid #f8fae56e;
+  border-radius: 20px;
+  backdrop-filter: blur(20px); /* MUITO IMPORTANTE EFEITO BORRADO*/
+  box-shadow: 0 0 30px #f8fae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: transform 0.5s ease, height 0.2s ease;
+  overflow: hidden;
+}
+.active {
+  transform: scale(1);
+}
+
+/* *********** FORM POPUP *************** */
+.form-contato {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.form-contato h2{
+    width: 100%;
+    height: 45px;
+    padding: 20px;
+    background: #f8fae5;
     color: #b19470;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-contato form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.input-box{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    border-bottom: 2px solid #f8fae5;
+    margin: 20px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #f8fae5;
     font-weight: 500;
-    margin-left: 40px;
+    pointer-events: none;
     transition: .5s;
 }
 
-.btnContato-popup:hover{
-    background: #76453b;
-    border-color: #76453b;
-    color: #f8fae5;
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
 }
 
-/* ********* Contato popup ************ */
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color:#fff;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
 
-.popup-contato{
-    z-index: 2;
-    margin: 150px;
-    width: 400px;
-    height: 440px;
-    background-color: transparent;
-        border: 2px solid #f8fae56e;
-        border-radius: 20px;
-        backdrop-filter: blur(20px); /* MUITO IMPORTANTE EFEITO BORRADO*/
-        box-shadow: 0 0 30px #f8fae5;
+form textarea{
+    width: 90%;
+    height: 60%;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* *********** btnPopup ******* */
+
+.btnConatato{
+    padding: 5px 50px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s;
+    color: #b19470;
+    background: #f8fae5;
+}
+.btnConatato:hover{
+  background: #76453b;
+  border-color: #76453b;
+  color: #f8fae5;
+}
+
+/* ************** ICON CLOSE - POPUP ****************** */
+
+.popup-contato .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #f8fae567;
+  font-size: 2rem;
+  color: #b19470;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+.popup-contato .icon-close:hover {
+  color: #76453b;
+}
+
+/* ********************  RESPONSIVOS ************************** */
+
+@media (max-width: 722px) {
+  header .navgation .home {
+    display: none;
+  }
+  header {
+    display: flex;
+    padding: 20px 30px;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header .navgation {
+    display: none;
+  }
+  .popup-contato {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    height: 440px;
+    background-color: transparent;
+    border: 2px solid #f8fae56e;
+    border-radius: 20px;
+    backdrop-filter: blur(20px); /* MUITO IMPORTANTE EFEITO BORRADO*/
+    box-shadow: 0 0 30px #f8fae5;
     transform: scale(0);
-    transition: transform .5s ease, height .2s ease;
-    overflow: hidden;
-}
-
-.active{
+    transition: transform 0.5s ease, height 0.2s ease;
+  }
+  .active {
     transform: scale(1);
-}
-
-.popup-contato .icon-close{
+  }
+  .popup-contato .icon-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -126,62 +280,11 @@ header{
     border-bottom-left-radius: 20px;
     cursor: pointer;
     z-index: 1;
-}
-.popup-contato .icon-close:hover{
+  }
+  .popup-contato .icon-close:hover {
     color: #76453b;
-}
-
-@media(max-width: 722px){
-    header .navgation .home{
-        display: none;
-    }
-    header{
-        display: flex;
-        padding: 20px 30px;
-    }
-    .logo{
-        font-size: 1.5rem;
-    }
-}
-
-@media(max-width: 600px){
-    header .navgation{
-        display: none;
-    }
-    .popup-contato{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height: 400px;
-        background-color: transparent;
-        border: 2px solid #f8fae56e;
-        border-radius: 20px;
-        backdrop-filter: blur(20px); /* MUITO IMPORTANTE EFEITO BORRADO*/
-        box-shadow: 0 0 30px #f8fae5;
-        transform: scale(0);
-        transition: transform .5s ease, height .2s ease;   
-    }
-    .active{
-        transform: scale(1);
-    }
-    .popup-contato .icon-close{
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 45px;
-        height: 45px;
-        background: #f8fae567;
-        font-size: 2rem;
-        color: #b19470;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom-left-radius: 20px;
-        cursor: pointer;
-        z-index: 1;
-    }
-    .popup-contato .icon-close:hover{
-        color: #76453b;
-    }
+  }
+  .form-contato h2{
+    font-size: 1.2rem;
+  }
 }

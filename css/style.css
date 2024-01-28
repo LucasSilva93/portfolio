@@ -423,8 +423,11 @@ form textarea {
     width: 100%;
     text-align: center;
   }
+  .introducao1 h1{
+    font-size: 3rem;
+  }
   .introducao1 p {
-    letter-spacing: 5px;
+    letter-spacing: 1px;
   }
   .introducao2{
     width: 100%;
@@ -444,7 +447,5 @@ form textarea {
   .midias-social .redes a span{
     display: none;
   }
-  .introducao2{
-    margin-top: 50px;
-  }
+
 }

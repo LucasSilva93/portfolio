@@ -1,5 +1,5 @@
 // POPUP CONTATO
-const popupContato = document.querySelector(".popup-contato");
+const popupContato = document.querySelector(".background-popup");
 
 const contatoBtn = document.querySelector(".btnContato-popup");
 contatoBtn.addEventListener("click", () => {

@@ -23,31 +23,33 @@
         <button class= "btnContato-popup">Contato</button>
         </header>
     </div>
-    <div class="popup-contato">  <!--Contato popup-->
-        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
-        <div class="form-contato"> <!--Form Contato-->
-            <h2>Entre em contato</h2>
-            <form action="#">
-                <div class="input-box">
-                   
-                    <input type="text" required>
-                    <label>Nome</label>
-                </div>
-                <div class="input-box">
-                    
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    
-                    <input type="text" required>
-                    <label>Assunto</label>
-                </div>
-                <textarea name="conteudo" id=""  placeholder="Ainda não esta funcionando o envio do formulário"></textarea>
-                <button type="submit" class="btnContato">Enviar</button>  
-            </form> 
-        </div><!--Form Contato-->
-    </div> <!--Contato popup-->
+    <div class="background-popup">
+        <div class="popup-contato">  <!--Contato popup-->
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form-contato"> <!--Form Contato-->
+                <h2>Entre em contato</h2>
+                <form action="#">
+                    <div class="input-box">
+                       
+                        <input type="text" required>
+                        <label>Nome</label>
+                    </div>
+                    <div class="input-box">
+                        
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        
+                        <input type="text" required>
+                        <label>Assunto</label>
+                    </div>
+                    <textarea name="conteudo" id=""  placeholder="Ainda não esta funcionando o envio do formulário"></textarea>
+                    <button type="submit" class="btnContato">Enviar</button>  
+                </form> 
+            </div><!--Form Contato-->
+        </div> <!--Contato popup-->
+    </div>
     <div id="container"> <!--CONTEUDO-->
         <div class="inicio">
            <div class="introducao1">
@@ -61,19 +63,25 @@
                     <img src="imgs/#">
                     <div class="midias-social">
                         <div class="redes">
-                            <a href="https://www.instagram.com/_lucassilva_93/">
+                            <a href="https://api.whatsapp.com/send?phone=5512997639666" target="_blank">
+                                <ion-icon class="whatsapp" name="logo-whatsapp"></ion-icon>
+                                <span class="whatsapp">Whatsapp</span>
+                            </a>     
+                        </div>
+                        <div class="redes">
+                            <a href="https://www.instagram.com/_lucassilva_93/" target="_blank">
                                 <ion-icon class="instagram" name="logo-instagram"></ion-icon>
                                 <span class="instagram">Instagram</span>
                             </a>     
                         </div>
                         <div class="redes">
-                            <a href="https://github.com/LucasSilva93">
+                            <a href="https://github.com/LucasSilva93" target="_blank">
                                 <ion-icon class="github" name="logo-github"></ion-icon>
                                 <span class="github">GitHub</span>
                             </a>
                         </div>
                         <div class="redes">
-                            <a href="https://www.linkedin.com/in/lucas-silva-9b48a122b/">
+                            <a href="https://www.linkedin.com/in/lucas-silva-9b48a122b/" target="_blank">
                                 <ion-icon class="linkedin" name="logo-linkedin"></ion-icon>
                                 <span class="linkedin">Linkedin</span>
                             </a>
@@ -81,7 +89,73 @@
                     </div>
                 </div>
            </div>
+        </div><!--FINAL INTRODUÇÂO-->
+    </div><!--FINAL CONTEUDO-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="tecnologias">
+        <h2>Tecnologias</h2>
+        <p>Aqui se encontra algumas das tecnologias que tenho conhecimento.</p>
+        <div class="info-tecnologias">
+            <div class="info html5">
+                <p></p>
+            </div>
+            <div class="info css3">
+                <p></p>
+            </div>
+            <div class="info javascript">
+                <p></p>
+            </div>
+            <div class="info outras">  
+                <p></p>
+            </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+    <footer>
+        <h2 class="logo">Portfó<span>lio.</span></h2>
+        <p>&copy; 2024 por Lucas Silva. <br> Todos os direitos reservados.</p>
+        <div class="midias-social">
+            <div class="redes">
+                <a href="https://api.whatsapp.com/send?phone=5512997639666" target="_blank">
+                    <ion-icon class="whatsapp" name="logo-whatsapp"></ion-icon>  
+                </a>     
+            </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/_lucassilva_93/" target="_blank">
+                    <ion-icon class="instagram" name="logo-instagram"></ion-icon>  
+                </a>     
+            </div>
+            <div class="redes">
+                <a href="https://github.com/LucasSilva93" target="_blank">
+                    <ion-icon class="github" name="logo-github"></ion-icon>  
+                </a>
+            </div>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/lucas-silva-9b48a122b/" target="_blank">
+                    <ion-icon class="linkedin" name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
